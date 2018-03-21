@@ -1,0 +1,47 @@
+{
+  "name": "init-pkg",
+  "version": "1.0.0",
+  "description": "like `npm init` but automatic and configurable",
+  "bin": "cli.js",
+  "main": "lib/initPkg.js",
+  "scripts": {
+    "test": "npm run lint && npm run test-only",
+    "test-only": "jest --verbose --ci",
+    "fix": "zenflow-lint-js --fix",
+    "lint": "zenflow-lint-js",
+    "dev": "jest --verbose --watch --notify"
+  },
+  "keywords": [
+    "pkg",
+    "package",
+    "init",
+    "initialize",
+    "initialise",
+    "initializer",
+    "initialiser",
+    "bootstrap",
+    "generate",
+    "generator",
+    "scaffold",
+    "scaffolding",
+    "rapid",
+    "rad"
+  ],
+  "author": {
+    "name": "Matthew Francis Brunetti",
+    "email": "zenflow87@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "find-up": "^2.1.0",
+    "minimist": "^1.2.0",
+    "real-time-file": "^2.0.0"
+  },
+  "devDependencies": {
+    "execa": "^0.10.0",
+    "jest": "^22.4.2",
+    "recursive-copy": "^2.0.9",
+    "tempy": "^0.2.1",
+    "zenflow-lint-js": "^1.0.0"
+  }
+}
